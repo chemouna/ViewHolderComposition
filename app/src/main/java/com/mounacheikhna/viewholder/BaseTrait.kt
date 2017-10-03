@@ -5,5 +5,5 @@ package com.mounacheikhna.viewholder
  */
 interface BaseTrait {
 
-    fun bind()
+    fun bind(v: String)
 }

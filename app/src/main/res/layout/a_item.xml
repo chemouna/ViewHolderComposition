@@ -7,8 +7,8 @@
     <include layout="@layout/common_content_in_item" />
 
     <TextView
+        android:id="@+id/a1"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="A"/>
+        android:layout_height="wrap_content"/>
 
 </LinearLayout>
