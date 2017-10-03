@@ -2,6 +2,7 @@ package com.mounacheikhna.viewholder
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.support.v7.widget.LinearLayoutManager
 import android.support.v7.widget.RecyclerView
 import viewholder.mounacheikhna.com.viewholdercomposition.R
 
@@ -12,6 +13,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val recyclerView = findViewById<RecyclerView>(R.id.rv)
+        recyclerView.layoutManager = LinearLayoutManager(this)
         recyclerView.adapter = MyAdapter()
     }
 }

@@ -13,7 +13,7 @@ class MyAdapter : RecyclerView.Adapter<BaseViewHolder>() {
     val viewTypeA : Int = 1
     val viewTypeB : Int  = 2
 
-    val items : List<Array<String>> = arrayListOf(arrayOf("A1", "B1"), arrayOf("A2", "B2"))
+    val items : List<String> = listOf("A1", "B1", "A2", "B2")
 
     override fun onCreateViewHolder(parent: ViewGroup?, viewType: Int): BaseViewHolder {
         val traits : MutableList<BaseTrait> = mutableListOf()
@@ -29,7 +29,7 @@ class MyAdapter : RecyclerView.Adapter<BaseViewHolder>() {
                 return BaseViewHolder(itemView, traits)
             }
             else -> {
-                val itemView = LayoutInflater.from(parent!!.context).inflate(R.layout.common_content_in_item, parent, false)
+                val itemView = LayoutInflater.from(parent!!.context).inflate(R.layout.b_item, parent, false)
                 return BaseViewHolder(itemView, arrayListOf())
             }
         }
@@ -43,4 +43,10 @@ class MyAdapter : RecyclerView.Adapter<BaseViewHolder>() {
         return items.size
     }
 
+    override fun getItemViewType(position: Int): Int {
+        if(position % 2 == 0) {
+            return viewTypeA
+        }
+        return viewTypeB
+    }
 }

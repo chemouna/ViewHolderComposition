@@ -8,8 +8,8 @@ import android.view.View
  */
 class BaseViewHolder(val itemView: View, val traits: MutableList<BaseTrait>) : RecyclerView.ViewHolder(itemView) {
 
-    fun bind(strings: Array<String>) {
-        traits.forEach { it.bind(strings[0]) }
+    fun bind(v: String) {
+        traits.forEach { it.bind(v) }
     }
 
 
