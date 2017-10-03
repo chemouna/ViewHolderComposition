@@ -3,6 +3,7 @@ package com.mounacheikhna.viewholder
 import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import viewholder.mounacheikhna.com.viewholdercomposition.R
 
 /**
  * Created by mounacheikhna on 03/10/2017.
