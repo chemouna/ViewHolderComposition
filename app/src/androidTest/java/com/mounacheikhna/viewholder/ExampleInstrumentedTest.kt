@@ -1,4 +1,4 @@
-package viewholder.mounacheikhna.com.viewholdercomposition
+package com.mounacheikhna.viewholder
 
 import android.support.test.InstrumentationRegistry
 import android.support.test.runner.AndroidJUnit4
